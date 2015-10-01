@@ -6,6 +6,13 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('admin');
+  this.route('index', { path: '/' }, function () {
+    this.route('bar');
+    this.route('bat');
+    this.route('foo');
+  });
+  this.route('unauthorized');
 });
 
 export default Router;
