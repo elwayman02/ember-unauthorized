@@ -1,8 +1,13 @@
 # Ember-Unauthorized
 
 [![Build Status](https://travis-ci.org/elwayman02/ember-unauthorized.svg)](https://travis-ci.org/elwayman02/ember-unauthorized)
+[![Dependency Status](https://www.versioneye.com/user/projects/560de55b5a262f0022000948/badge.svg?style=flat)](https://www.versioneye.com/user/projects/560de55b5a262f0022000948)
+[![Code Climate](https://codeclimate.com/github/elwayman02/ember-unauthorized/badges/gpa.svg)](https://codeclimate.com/github/elwayman02/ember-unauthorized)
+[![Codacy Badge](https://api.codacy.com/project/badge/aa67e5139d4845b5b884d9360ffcf5f1)](https://www.codacy.com/app/hawker-jordan/ember-unauthorized)
 
 Ember Mixins for handling unauthorized access to application content
+
+[View Demo](http://github.jhawk.co/ember-unauthorized/)
 
 ## Usage
 
