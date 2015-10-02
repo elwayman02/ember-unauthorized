@@ -1,6 +1,6 @@
 {
   "name": "ember-unauthorized",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Ember Mixins for handling unauthorized access to application content",
   "directories": {
     "doc": "doc",
