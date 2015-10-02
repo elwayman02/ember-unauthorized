@@ -9,6 +9,10 @@
     "ember-qunit-notifications": "0.1.0",
     "jquery": "^1.11.3",
     "loader.js": "3.3.0",
-    "qunit": "~1.19.0"
+    "qunit": "~1.19.0",
+    "sinonjs": "~1.17.1"
+  },
+  "devDependencies": {
+    "blanket": "~1.1.5"
   }
 }
