@@ -40,7 +40,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.baseURL = '/ember-unauthorized';
+    ENV.locationType = 'hash';
+    ENV.baseURL = '/ember-unauthorized/';
   }
 
   return ENV;

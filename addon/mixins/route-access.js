@@ -6,26 +6,26 @@ import AccessMixin from 'ember-unauthorized/mixins/access';
  * @module routeAccess
  */
 export default Ember.Mixin.create(AccessMixin, {
-    /**
-     * Name of the route to redirect unauthorized users to
-     * @type {string}
-     * @default
-     */
-    unauthorizedRoute: 'unauthorized',
+  /**
+   * Name of the route to redirect unauthorized users to
+   * @type {string}
+   * @default
+   */
+  unauthorizedRoute: 'unauthorized',
 
-    /**
-     * Handles unauthorized access attempts
-     * @override
-     */
-    unauthorized() {
-        this.transitionTo(this.get('unauthorizedRoute'));
-    },
+  /**
+   * Handles unauthorized access attempts
+   * @override
+   */
+  unauthorized() {
+    this.transitionTo(this.get('unauthorizedRoute'));
+  },
 
-    /**
-     * Checks to see if the user is authorized to access this route.
-     * If not, transitions to the unauthorized route.
-     */
-    routeAccess: Ember.on('activate', function () {
-        this.checkAuthorization();
-    })
+  /**
+   * Checks to see if the user is authorized to access this route.
+   * If not, transitions to the unauthorized route.
+   */
+  routeAccess: Ember.on('activate', function () {
+    this.checkAuthorization();
+  })
 });

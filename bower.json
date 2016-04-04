@@ -1,18 +1,12 @@
 {
   "name": "ember-unauthorized",
   "dependencies": {
-    "ember": "2.1.0-beta.4",
-    "ember-cli-shims": "0.0.6",
-    "ember-cli-test-loader": "0.2.1",
-    "ember-load-initializers": "0.1.7",
-    "ember-qunit": "0.4.11",
-    "ember-qunit-notifications": "0.1.0",
-    "jquery": "^2.1.4",
-    "loader.js": "3.3.0",
-    "qunit": "~1.19.0",
-    "sinonjs": "~1.17.1"
+    "ember": "~2.4.3",
+    "ember-cli-shims": "0.1.1"
   },
   "devDependencies": {
-    "blanket": "~1.1.5"
+    "blanket": "~1.1.5",
+    "ember-cli-test-loader": "0.2.2",
+    "ember-qunit-notifications": "0.1.0"
   }
 }
