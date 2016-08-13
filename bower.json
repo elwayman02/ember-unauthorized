@@ -1,12 +1,11 @@
 {
   "name": "ember-unauthorized",
   "dependencies": {
-    "ember": "~2.4.3",
+    "ember": "~2.7.0",
     "ember-cli-shims": "0.1.1"
   },
   "devDependencies": {
     "blanket": "~1.1.5",
-    "ember-cli-test-loader": "0.2.2",
     "ember-qunit-notifications": "0.1.0"
   }
 }
