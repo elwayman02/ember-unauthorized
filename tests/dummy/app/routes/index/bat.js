@@ -1,7 +1,7 @@
-import Ember from 'ember';
+import Route from 'ember-route';
 import RouteAccessMixin from 'ember-unauthorized/mixins/route-access';
 
-export default Ember.Route.extend(RouteAccessMixin, {
+export default Route.extend(RouteAccessMixin, {
   authorize() {
     return true;
   }

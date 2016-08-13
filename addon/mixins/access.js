@@ -1,10 +1,11 @@
-import Ember from 'ember';
+import Mixin from 'ember-metal/mixin';
+import { isPresent } from 'ember-utils';
 
 /**
  * Mixin to detect and handle attempts to access unauthorized content
  * @module access
  */
-export default Ember.Mixin.create({
+export default Mixin.create({
   /**
    * Name of the key used to access feature flags
    * @type {string}
@@ -27,7 +28,7 @@ export default Ember.Mixin.create({
   /**
    * Handles unauthorized access attempts; should be overridden
    */
-  unauthorized: Ember.K,
+  unauthorized() {},
 
   /**
    * Determines whether a required feature is disabled
@@ -44,13 +45,13 @@ export default Ember.Mixin.create({
     let requiredFeatures = this.get('requiredFeatures');
     let unauthorized = false;
 
-    if (Ember.isPresent(requiredFeatures)) {
+    if (isPresent(requiredFeatures)) {
       requiredFeatures.forEach((key) => { // Make sure each required feature is enabled
         unauthorized = unauthorized || this.isFeatureDisabled(key);
       });
     }
 
-    if (Ember.isEqual(Ember.typeOf(this.authorize), 'function')) {
+    if (typeof(this.authorize) === 'function') {
       unauthorized = unauthorized || !this.authorize(); // Perform additional authorization
     }
 
