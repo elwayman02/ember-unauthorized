@@ -9,7 +9,7 @@ module('Unit | Mixin | route access', {
   setup() {
     let RouteAccessObject = Ember.Object.extend(RouteAccessMixin);
     subject = RouteAccessObject.create({
-      transitionTo: Ember.K
+      transitionTo() {}
     });
   }
 });

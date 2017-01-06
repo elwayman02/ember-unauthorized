@@ -84,7 +84,7 @@ test('checkAuthorization checks custom authorize method', function (assert) {
     return false;
   });
   let unauthStub = this.stub(subject, 'unauthorized');
-  subject.set('authorize', Ember.K);
+  subject.set('authorize', function() {});
   let authorizeStub = this.stub(subject, 'authorize', function () {
     return true;
   });
@@ -101,7 +101,7 @@ test('checkAuthorization does not check authorize if features were disabled', fu
   });
   let unauthStub = this.stub(subject, 'unauthorized');
   subject.set('requiredFeatures', features);
-  subject.set('authorize', Ember.K);
+  subject.set('authorize', function() {});
   let authorizeStub = this.stub(subject, 'authorize', function () {
     return true;
   });
