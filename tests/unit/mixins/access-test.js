@@ -7,7 +7,7 @@ let subject;
 const features = ['foo', 'bar'];
 
 module('Unit | Mixin | access', {
-  setup() {
+  beforeEach() {
     let AccessObject = Ember.Object.extend(AccessMixin);
     subject = AccessObject.create({
       features: Ember.Object.create({

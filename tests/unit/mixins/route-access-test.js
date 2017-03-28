@@ -6,7 +6,7 @@ import test from 'dummy/tests/ember-sinon-qunit/test';
 let subject;
 
 module('Unit | Mixin | route access', {
-  setup() {
+  beforeEach() {
     let RouteAccessObject = Ember.Object.extend(RouteAccessMixin);
     subject = RouteAccessObject.create({
       transitionTo() {}
