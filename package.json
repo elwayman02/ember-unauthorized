@@ -1,6 +1,6 @@
 {
   "name": "ember-unauthorized",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Ember Mixins for handling unauthorized access to application content",
   "keywords": [
     "ember-addon",
